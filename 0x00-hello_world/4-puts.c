@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- *afiicher un message 
+ *write message here
+ *sqdf 
  *return: 0
 */
-int main(void)
+int main()
 {	
-	puts ("\"Programming is like building a multilingual puzzle");
+	puts("Programming is like building a multilingual puzzle/n");
 	return (0);
 }
