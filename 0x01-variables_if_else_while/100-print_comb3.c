@@ -6,21 +6,17 @@
  */
 int main(void)
 {
-	int i, a, b, c;
+	int i, a, b;
 
-	for (i = 0; i < 1000; i++)
+	for (i = 0 ; i < 100 ; i++)
 	{
-	a = i / 100;
-	b = (i / 10) % 10;
-	c = i % 10;
-
-	if (a < b && b < c)
+	a = i / 10;
+	b = i % 10;
+	if (a < b)
 	{
 	putchar(a + '0');
 	putchar(b + '0');
-	putchar(c + '0');
-
-	if (i < 1000)
+	if (i < 100)
 	{
 	putchar(44);
 	putchar(32);
