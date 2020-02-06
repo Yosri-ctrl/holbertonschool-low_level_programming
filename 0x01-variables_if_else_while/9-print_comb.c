@@ -13,8 +13,11 @@ int main(void)
 	for (i = 0 ; i < 10 ; i++)
 	{
 	putchar(i + '0');
+	if (i < 10)
+	{
 	putchar(44);
 	putchar(32);
+	}
 	}
 	putchar('\n');
 
