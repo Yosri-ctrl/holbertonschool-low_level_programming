@@ -3,7 +3,7 @@
  * print_alphabet - Entry point
  * Return: Always 0 (success)
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 char c;
 int i;
