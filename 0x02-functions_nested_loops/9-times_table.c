@@ -16,20 +16,20 @@ for (j = 0; j <= 9 ; j++)
 
 if ((i * j) > 9)
 {
-putchar((i * j) / 10 + '0');
-putchar((i * j) % 10 + '0');
+_putchar((i * j) / 10 + '0');
+_putchar((i * j) % 10 + '0');
 }
 else if ((i * j) >= 0)
 {
-putchar(' ');
-putchar((i * j) + '0');
+_putchar(' ');
+_putchar((i * j) + '0');
 }
 
 if (j < 9)
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 
 }
-putchar('\n');
+_putchar('\n');
 }
 }
