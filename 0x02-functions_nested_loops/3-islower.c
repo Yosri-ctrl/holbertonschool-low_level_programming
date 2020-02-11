@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _islower - Entry point
- * int c - is a chracter lower or upper
+ * @c : is a chracter lower or upper
  * Return: Always 0 (success)
  */
 int _islower(int c)
