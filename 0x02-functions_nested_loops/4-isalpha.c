@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * _islower - Entry point
+ * _isalpha - Entry point
  * @c : is a chracter lower or upper
  * Return: Always 0 (success)
  */
-int _islower(int c)
+int _isalpha(int c)
 {
 if ((c >= 97 && c <= 122) && (c >= 65 && c <= 90))
 {
