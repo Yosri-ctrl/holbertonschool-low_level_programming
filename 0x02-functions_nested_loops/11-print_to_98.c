@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include <stdio.h>
+
 /**
  * print_to_98 - Entry point
  * @n : is a number
@@ -12,7 +13,7 @@ for (; n <= 98; n++)
 {
 _printf("%d", n);
 if (n != 98)
-_putchar(',');
+printf(", ");
 }
 
 else
@@ -20,7 +21,7 @@ for (; n >= 98; n--)
 {
 _printf("%d", n);
 if (n != 98)
-_putchar(',');
+printf(", ");
 }
 
 }
