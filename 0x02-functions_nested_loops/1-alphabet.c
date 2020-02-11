@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (success)
  */
-int print_alphabet(void)
+int main(void)
 {
 int i;
 
