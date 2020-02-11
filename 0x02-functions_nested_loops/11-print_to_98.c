@@ -15,7 +15,6 @@ if (a != 98)
 _putchar(',');
 }
 
-
 else
 for (; a >= 98; a--)
 {
@@ -23,5 +22,5 @@ _printf("%d", a);
 if (a != 98)
 _putchar(',');
 }
-printf("\n");
+
 }
