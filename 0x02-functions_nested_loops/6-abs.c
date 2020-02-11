@@ -4,10 +4,10 @@
  * @n : is a number
  * Return: Always 0 (success)
  */
-int _abs(int n)
+int _abs(int)
 {
-if (n >= 0)
-_putchar(n);
-else 
-_putchar(n * -1)
+if (n < 0)
+_putchar(n * -1);
+else
+_putchar(n)
 }
