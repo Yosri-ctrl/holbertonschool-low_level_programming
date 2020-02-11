@@ -14,7 +14,7 @@ for (j = 0; j <= 9 ; j++)
 {
 x = i * j;
 
-if (x >=9)
+if (x <= 9)
 {
 _putchar(x % 10 + '0');
 
@@ -41,9 +41,9 @@ _putchar(' ');
 else
 _putchar('$');
 }
+
+
 }
-
-
 _putchar('\n');
 }
 }
