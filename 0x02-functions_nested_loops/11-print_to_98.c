@@ -4,7 +4,7 @@
  * @a : is a number
  * Return: Always 0 (success)
  */
-int print_to_98(int a)
+void print_to_98(int a)
 {
 
 if (a < 98)
