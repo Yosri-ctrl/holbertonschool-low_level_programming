@@ -13,7 +13,6 @@ for (i = 0; i <= 9 ; i++)
 for (j = 0; j <= 9 ; j++)
 {
 
-
 if ((i * j) > 9)
 {
 _putchar((i * j) / 10 + '0');
@@ -30,8 +29,6 @@ if (j < 9)
 _putchar(',');
 _putchar(' ');
 }
-else
-putchar('$');
 }
 _putchar('\n');
 }
