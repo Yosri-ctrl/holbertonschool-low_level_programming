@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _abs - Entry point
- * @n : is a number
+ * @int : is a number
  * Return: Always 0 (success)
  */
 int _abs(int)
