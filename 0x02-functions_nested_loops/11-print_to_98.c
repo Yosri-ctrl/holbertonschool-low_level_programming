@@ -4,22 +4,22 @@
  * @a : is a number
  * Return: Always 0 (success)
  */
-void print_to_98(int a)
+void print_to_98(int n)
 {
 
-if (a < 98)
-for (; a <= 98; a++)
+if (n < 98)
+for (; n <= 98; n++)
 {
-_printf("%d", a);
-if (a != 98)
+_printf("%d", n);
+if (n != 98)
 _putchar(',');
 }
 
 else
-for (; a >= 98; a--)
+for (; n >= 98; n--)
 {
-_printf("%d", a);
-if (a != 98)
+_printf("%d", n);
+if (n != 98)
 _putchar(',');
 }
 
