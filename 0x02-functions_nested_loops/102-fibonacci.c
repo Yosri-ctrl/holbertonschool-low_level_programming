@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-int i, n, x = 0, y = 1;
+int i, n,
+long int x = 1, y = 2;
 
 for (i = 0; i <= 50; i++)
 {
 if (i < 50)
-printf("%d, ", x);
+printf("%lu, ", x);
 else
-printf("%d\n", x);
+printf("%lu\n", x);
 n = y;
-y = x + y;
+y += x;
 x = n;
 }
 }
