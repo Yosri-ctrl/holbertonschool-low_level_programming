@@ -15,7 +15,7 @@ for (i = 2; i <= 98; i++)
 if (i != 98)
 printf("%lu, ", y);
 else
-printf("%lu", y);
+printf("%lu\n", y);
 
 n = y;
 y += x;
