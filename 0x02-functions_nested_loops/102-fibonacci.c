@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int i, n,
+int i, n;
 long int x = 1, y = 2;
 
 for (i = 0; i <= 50; i++)
@@ -18,6 +18,5 @@ printf("%lu\n", x);
 n = y;
 y += x;
 x = n;
-}
 }
 }
