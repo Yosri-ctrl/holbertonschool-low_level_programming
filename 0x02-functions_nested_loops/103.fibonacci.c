@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Calculate the first 50 Fibonacci numbers.
+ * main - Calculate the totale of Fibonacci numbers
+ * that are less then 4000000.
  *
  * Return: Always 0 (success)
  */

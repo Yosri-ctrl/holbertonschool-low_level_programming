@@ -7,7 +7,7 @@
 int main(void)
 {
 int i;
-long int x = 1, y = 2, n, s = 0;
+unsigned long int x = 1, y = 2, n;
 
 printf("%lu, ", x);
 for (i = 2; i <= 98; i++)

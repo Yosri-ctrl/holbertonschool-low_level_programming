@@ -1,4 +1,3 @@
-
 #include "holberton.h"
 /**
 * print_times_table - Entry point
@@ -7,56 +6,45 @@
 */
 void print_times_table(int n)
 {
-int i, j;
-if (n < 0 || n > 15)
+int i, j, k;
+
+if (n < 0 || n > 0)
 return;
 else
 {
-for (i = 0 ; i <= n ; i++)
+for (i = 0; i <= n;)
 {
-for (j = 0 ; j <= n ; j++)
+for (j = 0; j <= n; j++)
 {
-if (i * j < 10) /* for numbers less then 10*/
+if ((i * j) >= 100) /* more then 100 */
 {
-_putchar(i * j + '0');
-if (j != n)
+putchar((i * j) / 100 + '0');
+putchar(((i * j) / 10 % 10) + '0');
+putchar((i * j) % 10 + '0');
+}
+else if ((i * j) >= 10) /* more then 10 and less then 100 */
 {
-_putchar(',');
-_putchar(' ');
-if (i * (j + 1) < 10)
+putchar(' ');
+putchar((i * j) / 10 + '0');
+putchar((i * j) % 10 + '0');
+}
+else if (j != 0) /* less the 10 */
 {
-_putchar(' ');
-_putchar(' ');
+putchar(' ');
+putchar(' ');
+putchar((i * j) + '0');
 }
 else
-_putchar(' ');
-}
-}
-else if ((i * j) < 100 && (i * j) >= 10) /* for numbers between 10 and 100 */
-{
-_putchar(i * j / 10 + '0');
-_putchar(i * j % 10 + '0');
+putchar((i * j) + '0');
 if (j != n)
 {
-_putchar(',');
-_putchar(' ');
-if (i * (j + 1) < 100)
-_putchar(' ');
+putchar(',');
+putchar(' ');
 }
 }
-else /* for numbers greater then 100 */
-{
-_putchar(i * j / 100 + '0');
-_putchar((i * j / 10) % 10 + '0');
-_putchar(i * j % 10 + '0');
-if (j != n)
-{
-_putchar(',');
-_putchar(' ');
+putchar('\n');
+i++;
 }
-}
-}
-_putchar('\n');
 }
 }
 }
