@@ -10,7 +10,7 @@ int i;
 long int x = 1, y = 2, n;
 
 printf("%lu, ", x);
-for (i = 0; i <= 50; i++)
+for (i = 2; i <= 50; i++)
 {
 if (i != 50)
 printf("%lu, ", y);
