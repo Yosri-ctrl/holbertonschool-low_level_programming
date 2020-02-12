@@ -5,16 +5,11 @@
 * @n : max number
 * Return: Always 0 (success)
 */
-
 void print_times_table(int n)
 {
 int i, j;
-
 if (n < 0 || n > 15)
-{
-exit;
-}
-
+return;
 else
 {
 for (i = 0 ; i <= n ; i++)
@@ -37,7 +32,6 @@ else
 _putchar(' ');
 }
 }
-
 else if ((i * j) < 100 && (i * j) >= 10) /* for numbers between 10 and 100 */
 {
 _putchar(i * j / 10 + '0');
@@ -47,12 +41,9 @@ if (j != n)
 _putchar(',');
 _putchar(' ');
 if (i * (j + 1) < 100)
-{
 _putchar(' ');
 }
 }
-}
-
 else /* for numbers greater then 100 */
 {
 _putchar(i * j / 100 + '0');
