@@ -10,9 +10,10 @@ int i, x = 0, y = 1, n;
 
 for (i = 1; i <= 50; i++)
 {
+if (i < 50)
 printf("%d, ", x);
-if (x >= 0)
-{
+else
+printf("%d\n", x);
 n = y;
 y = x + y;
 x = n;
