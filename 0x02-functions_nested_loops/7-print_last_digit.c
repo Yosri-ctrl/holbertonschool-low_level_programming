@@ -12,6 +12,8 @@ _putchar(x % 10 + '0');
 return (x % 10);
 }
 else
+{
 _putchar((x % 10) * -1 + '0');
 return ((x % 10) * -1);
+}
 }
