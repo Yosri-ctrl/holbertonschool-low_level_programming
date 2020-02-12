@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-int i, x = 0, y = 1, n;
+int i, n, x = 0, y = 1;
 
-for (i = 1; i <= 50; i++)
+for (i = 0; i <= 50; i++)
 {
 if (i < 50)
 printf("%d, ", x);
