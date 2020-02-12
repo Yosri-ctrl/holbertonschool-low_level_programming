@@ -1,22 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Calculate the first 50 Fibonacci numbers.
  *
  * Return: Always 0 (success)
  */
-void main(void)
+int main(void)
 {
-int i, n;
-long int x = 1, y = 2;
+int i;
+long int x = 1, y = 2, n;
 
+printf("%lu, ", x);
 for (i = 0; i <= 50; i++)
 {
-if (i < 50)
-printf("%lu, ", x);
+if (i != 50)
+printf("%lu, ", y);
 else
-printf("%lu\n", x);
+printf("%lu\n", y);
 n = y;
 y += x;
 x = n;
 }
+return (0);
 }
