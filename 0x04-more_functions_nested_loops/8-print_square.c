@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * print_diagonal - print_diagonal.
- * @n : the length.
+ * print_square - Write a function that prints a square, followed by a new line.
+ * @size : the length.
  * Return: Always 0 (success)
  */
-void print_diagonal(int n)
+void print_square(int size)
 {
 int i, j;
 if (size <= 0)
