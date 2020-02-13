@@ -1,11 +1,11 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * print_diagonal - print_diagonal.
- * @n : the length.
+ * main - Entry point.
+ *
  * Return: Always 0 (success)
  */
-void print_diagonal(int n)
+void main(void)
 {
 int i;
 
