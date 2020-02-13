@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  * print_most_numbers - print num exept 2 & 4.
  * Return: Always 0 (success)
  */

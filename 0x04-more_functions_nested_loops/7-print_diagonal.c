@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  * print_diagonal - print_diagonal.
  * @n : the length.
  * Return: Always 0 (success)

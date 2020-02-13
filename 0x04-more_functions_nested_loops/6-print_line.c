@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  * print_line - print a line.
  * @n : the length of the line.
  * Return: Always 0 (success)

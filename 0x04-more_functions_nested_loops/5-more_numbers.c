@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  * more_numbers - print tell you are 14.
  * Return: Always 0 (success)
 */
