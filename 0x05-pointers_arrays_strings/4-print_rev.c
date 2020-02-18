@@ -11,7 +11,7 @@ int j, i;
 for (j = 0; s[j] != '\0'; j++)
 {}
 
-for (i = j; s[i] >= 0; i--)
+for (i = j-1; s[i] >= 0; i--)
 {
 _putchar(s[i]);
 }
