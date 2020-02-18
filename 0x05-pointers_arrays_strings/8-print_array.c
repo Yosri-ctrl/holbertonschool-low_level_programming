@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 /**
 * print_array - print the last half of a string.
