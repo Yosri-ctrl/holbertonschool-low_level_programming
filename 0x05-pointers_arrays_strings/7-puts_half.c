@@ -19,7 +19,7 @@ n = k / 2;
 else
 n = (k - 1) / 2;
 
-for (i = n; i <= k; i++)
+for (i = n; i <= k- 1; i++)
 _putchar(str[i]);
 _putchar('\n');
 
