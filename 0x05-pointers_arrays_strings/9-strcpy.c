@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 /**
 * _strcpy - print the last half of a string.
@@ -9,5 +7,10 @@
 */
 char *_strcpy(char *dest, char *src)
 {
-return (strcpy(dest, src));
+int i, k;
+for (k = 0; src[k] != '\0'; k++)
+;
+for (i = 0; i <= k; i++)
+dest[i] = src[i];
+return (dest);
 }
