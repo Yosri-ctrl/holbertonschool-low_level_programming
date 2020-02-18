@@ -9,11 +9,11 @@
 void print_array(int *a, int n)
 {
 int i;
-
-for (i = 0; i < n; i++)
+n = n - 1;
+for (i = 0; n >= 0; i++, n--)
 {
 printf("%d", a[i]);
-if (i < n)
+if (n > 0)
 printf(", ");
 }
 printf("\n");
