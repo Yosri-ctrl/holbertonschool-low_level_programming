@@ -1,4 +1,3 @@
-#include <string.h>
 #include "holberton.h"
 /**
 * puts2 -  prints every other character of a string.
@@ -7,10 +6,10 @@
 */
 void puts2(char *str)
 {
-int i;
-char k;
+int k, i;
 
-k = strlen(str);
+for (k = 0; str[k] != '\0'; k++)
+;
 for (i = 0; i <= k; i = i + 2)
 _putchar(str[i]);
 _putchar('\n');
