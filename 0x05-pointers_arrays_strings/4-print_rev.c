@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 /**
 * print_rev - print a string reversed.
@@ -11,8 +9,8 @@ void print_rev(char *s)
 int i;
 char k;
 
-k = strlen(s);
-for (i = k; i >= 0; i--)
+k = _strlen(s) - 1;
+for (i = k; s[i] >= 0; i--)
 _putchar(s[i]);
 _putchar('\n');
 }
