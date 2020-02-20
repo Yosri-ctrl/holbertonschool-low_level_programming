@@ -16,7 +16,7 @@ for (m = 0; x[m] != '\0'; m++)
 
 for (j = 0; j < i; j++)
 {
-for (k = 0; k < m; k++)
+for (k = 0; k <= m; k++)
 if ((c[j] >= 'a' && c[j] <= 'z') && (c[j - 1] == x[k]))
 c[j] = c[j] - 32;
 }
