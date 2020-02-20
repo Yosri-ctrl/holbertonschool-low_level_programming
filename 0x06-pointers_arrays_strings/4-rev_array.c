@@ -9,12 +9,7 @@ void reverse_array(int *a, int n)
 {
 int x, k, len;
 
-if (n % 2 == 0)
-len = n / 2;
-else
-len = (n / 2) + 1;
-
-for (k = 0, n--; k < len; k++, n--)
+for (k = 0, n--; k <= n / 2; k++, n--)
 {
 x = a[k];
 a[k] = a[n];
