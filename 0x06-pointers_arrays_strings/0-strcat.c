@@ -3,6 +3,7 @@
 * _strcat - Write a function that concatenates two strings
 * @dest : the distination
 * @src : the source file
+* Return: Always 0 (success)
 */
 char *_strcat(char *dest, char *src)
 {

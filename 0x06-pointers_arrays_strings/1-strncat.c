@@ -4,6 +4,7 @@
 * @dest : the distination
 * @src : the source file
 * @n : the max number
+* Return: Always 0 (success)
 */
 char *_strncat(char *dest, char *src, int n)
 {
