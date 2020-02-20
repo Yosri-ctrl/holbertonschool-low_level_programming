@@ -14,7 +14,7 @@ len = n / 2;
 else
 len = (n / 2) + 1;
 
-for (k = 0, n--; k <= len; k++, n--)
+for (k = 0, n--; k < len; k++, n--)
 {
 x = a[k];
 a[k] = a[n];
