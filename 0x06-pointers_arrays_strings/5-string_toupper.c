@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
-* string_toupper - Write a function that change the case
+* *string_toupper - Write a function that change the case
 * @c : the chain
+* Return: Always 0 (success)
 */
 char *string_toupper(char *c)
 {
