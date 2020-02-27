@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
 * _sqrt_recursion - Write a function that print the sqrt
-* _second - Counter for _sqrt_recursion
 *@n : the numb
 *@x : the counter
 *Return: Always 0
@@ -13,6 +12,13 @@ int _sqrt_recursion(int n)
 int x = 1;
 return (_second(n, x));
 }
+
+/**
+* _second - Counter for _sqrt_recursion
+*@n : the numb
+*@x : the counter
+*Return: Always 0
+*/
 
 int _second(int n, int x)
 {
