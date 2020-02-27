@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _sqrt_recursion - Write a function that print the sqrt
+* is_prime_number - Write a function that find the prime numb
 *@n : the numb
 *@x : the counter
 *Return: Always 0
@@ -13,7 +13,7 @@ return (second(n, x));
 }
 
 /**
-* _sqrt_recursion - Write a function that print the sqrt
+* second - Write a function that print the sqrt
 *@n : the numb
 *@x : the counter
 *Return: Always 0
