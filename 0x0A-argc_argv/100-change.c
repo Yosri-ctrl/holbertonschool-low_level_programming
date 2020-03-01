@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-  if (argc < 2)
+  if (atoi(argv[1]) <= 0)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
 
