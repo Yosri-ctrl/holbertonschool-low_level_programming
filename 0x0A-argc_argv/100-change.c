@@ -20,6 +20,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+  if (argc < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
+
   v = atoi(argv[1]);
 
   while(v != 0)
