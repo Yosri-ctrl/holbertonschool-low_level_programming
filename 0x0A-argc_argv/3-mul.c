@@ -21,9 +21,7 @@ printf("%d\n", s);
 return (0);
 }
 else
-{
 printf("ERROR\n");
-return (1);
-}
 
+return (1);
 }
