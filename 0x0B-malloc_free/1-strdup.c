@@ -22,6 +22,7 @@ return (NULL);
 
 for (i = 0; i < j; i++)
 c[i] = str[i];
+c[i] = '\0';
 
 return (c);
 }
