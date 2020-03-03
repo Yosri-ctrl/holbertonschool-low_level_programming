@@ -7,18 +7,21 @@
 */
 char *_strdup(char *str)
 {
-  int i, j;
-  char *c;
+int i, j;
+char *c;
 
-  if (str == NULL)
-  return (NULL);
+if (str == NULL)
+return (NULL);
 
-  for (j = 0; str[j] != '\0'; j++)
-  ;
-  c = malloc (j * sizeof(*c));
+for (j = 0; str[j] != '\0'; j++)
+;
+c = malloc (j * sizeof(*c));
 
-  for (i = 0; i < j; i++)
-  c[i] = str[i];
+if (a == NULL)
+return (NULL);
 
-  return (c);
+for (i = 0; i < j; i++)
+c[i] = str[i];
+
+return (c);
 }
