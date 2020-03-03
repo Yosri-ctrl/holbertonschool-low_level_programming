@@ -17,7 +17,7 @@ for (j = 0; str[j] != '\0'; j++)
 ;
 c = malloc (j * sizeof(*c));
 
-if (a == NULL)
+if (c == NULL)
 return (NULL);
 
 for (i = 0; i < j; i++)
