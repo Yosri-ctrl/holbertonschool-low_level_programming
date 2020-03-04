@@ -22,7 +22,7 @@ for (x = 0; s1[x] != '\0'; x++)
 for (y = 0; s2[y] != '\0'; y++)
 ;
 
-c = malloc((x * sizeof(*s1)) + (y * sizeof(*s2)) + 1);
+c = malloc((x * sizeof(*s1)) + (y * sizeof(*s2)) + 2);
 if (c == NULL)
 return (NULL);
 
