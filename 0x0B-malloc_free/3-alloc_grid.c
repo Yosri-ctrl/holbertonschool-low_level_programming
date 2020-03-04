@@ -23,6 +23,8 @@ for (i = 0; i < height; i++)
 a[i] = malloc(width * sizeof(*a));
 if (a[i] == NULL)
 {
+for (k = 0; k < height; k++)
+free(a[k]);
 free(a);
 return (NULL);
 }
