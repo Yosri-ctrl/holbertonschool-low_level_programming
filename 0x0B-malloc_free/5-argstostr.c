@@ -16,12 +16,13 @@ return (NULL);
 
 for (i = 0; i < ac; i++)
 {
-for (j = 0; av[i][j] != '\0'; j++, s++);
+for (j = 0; av[i][j] != '\0'; j++, s++)
+;
 s++;
 }
 
-c = malloc(s * sizeof(char));
-if ( c == NULL)
+c = malloc(sizeof(char) * s);
+if (c == NULL)
 return (NULL);
 
 x = c;
