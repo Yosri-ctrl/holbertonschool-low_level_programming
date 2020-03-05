@@ -22,7 +22,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-c = malloc((sizeof(char) * i) + (sizeof(char) * j) - 1);
+c = malloc((sizeof(char) * i) + (sizeof(char) * n) + 1);
 if (c == NULL)
 return (NULL);
 
