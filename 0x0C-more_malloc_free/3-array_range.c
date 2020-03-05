@@ -14,12 +14,12 @@ int i, j;
 if (min > max)
 return (NULL);
 
-a = malloc((min * sizeof(int)) + (max * sizeof(int)));
+a = malloc((min * sizeof(int)) + (max * sizeof(int)) + 1);
 if (a == NULL)
 return (NULL);
 
 for (i = min, j = 0; i <= max; i++, j++)
 a[j] = i;
 
-return(a);
+return (a);
 }
