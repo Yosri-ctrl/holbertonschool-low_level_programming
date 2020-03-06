@@ -18,7 +18,7 @@ a = malloc(sizeof(int) * ((max - min) + 1));
 if (a == NULL)
 return (NULL);
 
-for (i = min, j = 0; i < (max - min + 1); i++, j++)
+for (i = min, j = 0; j < (max - min + 1); i++, j++)
 a[j] = i;
 
 return (a);
