@@ -19,7 +19,9 @@ if (a == NULL)
 return (NULL);
 
 for (i = min, j = 0; i <= max; i++, j++)
-a[j] = i;
-
+{
+a[j] = min;
+min++;
+}
 return (a);
 }
