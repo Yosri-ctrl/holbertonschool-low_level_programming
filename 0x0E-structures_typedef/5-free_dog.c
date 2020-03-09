@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * free_dog - free dog space
-* @d: the dog 
+* @d: the dog
 */
 void free_dog(dog_t *d)
 {
