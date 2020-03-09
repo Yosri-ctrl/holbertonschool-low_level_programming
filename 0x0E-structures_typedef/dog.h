@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-*strucy dog - define dog
+*struct dog - define dog
 *@name : the name of the dog
 *@age : the age
 *@owner : the owner
