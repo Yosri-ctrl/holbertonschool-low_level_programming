@@ -10,8 +10,6 @@
  */
 dog_t *new_dog(char *new_dog, float age, char *owner)
 {
-
-
 struct dog *a;
 char *x, *y;
 int i, j, k, l;
@@ -51,5 +49,4 @@ a->age = age;
 a->owner = y;
 
 return (a);
-
 }
