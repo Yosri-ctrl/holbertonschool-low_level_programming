@@ -28,6 +28,7 @@ return (NULL);
 x = malloc(sizeof(char) * i + 1);
 if (x == NULL)
 {
+free(x);
 free(a);
 return (NULL);
 }
@@ -37,6 +38,8 @@ x[k] = new_dog[k];
 y = malloc(sizeof(char) * j + 1);
 if (y == NULL)
 {
+free(x);
+free(y);
 free(a);
 return (NULL);
 }
