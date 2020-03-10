@@ -2,7 +2,8 @@
 /**
  * main - print the file compiled from name
  */
-void main(void)
+int main(void)
 {
-    printf("%s\n"__FILE__);
+printf("%s\n"__FILE__);
+return (0);
 }
