@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
     res = get_op_func(argv[2]);
     num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
+    num2 = atoi(argv[3]);
     printf("%d\n", res(num1, num2));
     
     return (0);
