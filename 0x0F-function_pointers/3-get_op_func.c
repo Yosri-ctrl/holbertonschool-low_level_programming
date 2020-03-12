@@ -1,10 +1,9 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
- * op_add - addition
- * @a : the first nmb
- * @b : the second nmb
- * Return : the resulte
+ * get_op_func - addition
+ * @s: the operator
+ * Return: Always 0
  */
 int (*get_op_func(char *s))(int, int)
 {
