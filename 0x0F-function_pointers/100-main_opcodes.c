@@ -10,7 +10,7 @@ if (argc != 3)
 printf("Error");
 exit(1);
 
-if (argv[1] <= 0)
+if (atoi(argv[1]) <= 0)
 printf ("Error");
 exit(2);
 }
