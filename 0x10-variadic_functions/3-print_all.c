@@ -1,35 +1,38 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <string.h>
+
 /**
 *print_all - print every thing 
 *@format : the format of the input
 */
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
-    forme forms[] ={
+    forme forms[] = {
         {"c", p_char},
         {"i", p_int},
         {"f", p_float},
-        {"s", p_string}
-    };
+        {"s", p_string}};
 
     va_list arg;
-    unsigned int i, j;
+    int i, j, k;
+
+    k = 0;
+    while (format[k])
+        k++;
 
     va_start(arg, format);
     i = 0;
-    while (format[i] != '\0')
+    j = 0;
+    while (i < k)
     {
-        j = 0;
-        while (j < 4)
+        /*printf("i=%d\n",i);*/
+        if (*forms[j].c == format[i])
         {
-            if (format[i] == *forms[j].c)
-            {   
-                forms[j].fun(arg);
-                printf(", ");
-            }
+            /*printf("j=%d\n  ",j);*/
+            forms[j].fun(arg);
+
+            printf(", ");
             j++;
         }
         i++;
@@ -37,10 +40,6 @@ void print_all(const char * const format, ...)
     printf("\n");
     va_end(arg);
 }
-
-
-
-
 
 void p_int(va_list a)
 {
