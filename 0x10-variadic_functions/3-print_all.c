@@ -16,29 +16,23 @@ void print_all(const char * const format, ...)
     };
 
     va_list arg;
-    int i, j, k;
-    
-    k = 0;
-    while(format[k])
-    k++;
+    unsigned int i, j;
 
     va_start(arg, format);
     i = 0;
-    j = 0;
-    while (i < k)
+    while (format[i] != '\0')
     {
-        /*printf("i=%d\n",i);*/
-        if (forms[j].c[0] == format[i])
-        {   
-            /*printf("j=%d\n  ",j);*/
-            forms[j].a(arg);
-            
-            printf(", ");
+        j = 0;
+        while (j < 4)
+        {
+            if (format[i] == *forms[j].c)
+            {   
+                forms[j].fun(arg);
+                printf(", ");
+            }
             j++;
-            
         }
         i++;
-        
     }
     printf("\n");
     va_end(arg);
