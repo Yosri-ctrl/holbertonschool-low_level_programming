@@ -29,7 +29,7 @@ void print_all(const char *const format, ...)
         /*printf("i=%d\n",i);*/
         if (*forms[j].c == format[i])
         {
-            /*printf("j=%d\n  ",j);*/
+            
             forms[j].fun(arg);
 
             printf(", ");
