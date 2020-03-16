@@ -15,12 +15,10 @@ void print_all(const char * const format, ...)
         {"s", p_string}
     };
 
-    va_list a;
+    va_list arg;
     unsigned int i, j;
-    char *s;
 
-    va_start(a, format);
-    s = "";
+    va_start(arg, format);
     i = 0;
     while (format[i] != '\0')
     {
@@ -29,17 +27,17 @@ void print_all(const char * const format, ...)
         {
             if (format[i] == *forms[j].c)
             {   
-                printf("%s", s);
-                forms[j].fun(a);
-                s = ", ";
+                forms[j].fun(arg);
+                printf(", ");
             }
             j++;
         }
         i++;
     }
     printf("\n");
-    va_end(a);
+    va_end(arg);
 }
+
 
 
 
