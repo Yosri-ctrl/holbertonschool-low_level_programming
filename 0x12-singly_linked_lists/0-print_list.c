@@ -6,7 +6,6 @@
  **/
 size_t print_list(const list_t *head)
 {
-
 int nbr_node;
 
 for (nbr_node = 0; head != NULL;)
