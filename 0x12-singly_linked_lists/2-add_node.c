@@ -26,5 +26,6 @@ new_head->str = strdup(str);
 new_head->len = i;
 new_head->next = *head;
 
-return (*new_head);
+*head = new_head;
+return (*head);
 }
