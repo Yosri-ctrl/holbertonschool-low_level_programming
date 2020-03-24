@@ -14,7 +14,7 @@ unsigned int i;
 for (i = 0; i < index; i++)
 {
 if (head->next == NULL)
-return;
+return (NULL);
 head = head->next;
 }
 
