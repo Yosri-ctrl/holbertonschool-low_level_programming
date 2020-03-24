@@ -2,25 +2,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_listint2 - free_listint virsion 2
+ * pop_listint - pop_listint
  * @head: the head of the list
+ * Return: the data
  **/
 int pop_listint(listint_t **head)
 {
-    listint_t *node;
-    int n;
+listint_t *node;
+int n;
 
-    node = *head;
-    if (*head != NULL)
-    {
-        n = node->n;
-        *head = node->next;
-        free(node);
-    }
-    else
-    {
-        n = 0;
-    }
-    
-    return (n);
+node = *head;
+if (*head != NULL)
+{
+n = node->n;
+*head = node->next;
+free(node);
+}
+else
+{
+n = 0;
+}
+
+return (n);
 }
