@@ -16,8 +16,9 @@ return;
 node = *head;
 if (node != NULL)
 {
-node = node->next;
-free(node);
+    free(node);
+    node = node->next;
+
 }
 
 *head = NULL;
