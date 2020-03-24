@@ -14,7 +14,7 @@ if (head == NULL)
 return;
 
 node = *head;
-if (node != NULL)
+while (node != NULL)
 {
 node2 = node;
 node = node->next;
