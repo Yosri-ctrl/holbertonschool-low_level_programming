@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * listint_len - listint_len
- * @h: the head of the list
- * Return: the nbr of nodes in the list
+ * add_nodeint - add_nodeint
+ * @head: the head of the list
+ * @n: the int to insert
+ * Return: the pointer to the next node
  **/
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -20,6 +21,6 @@ new_node->n = n;
 new_node->next = *head;
 
 
-*head  =new_node;
+*head = new_node;
 return (*head);
 }
