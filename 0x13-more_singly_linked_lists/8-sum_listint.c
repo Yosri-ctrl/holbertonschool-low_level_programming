@@ -2,21 +2,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * get_nodeint_at_index - get_nodeint_at_index
+ * sum_listint - sum_listint
  * @head: the head of the list
- * @index: the node searching for
- * Return: the data
+ * Return: the sum
  **/
 int sum_listint(listint_t *head)
 {
-    int count = 0;
+int count = 0;
 
-    while (head->next != NULL)
-    {
-        count += head->n;
-        head = head->next;
-    }
-    count += head->n;
+while (head->next != NULL)
+{
+count += head->n;
+head = head->next;
+}
+count += head->n;
 
-    return (count);
+return (count);
 }
