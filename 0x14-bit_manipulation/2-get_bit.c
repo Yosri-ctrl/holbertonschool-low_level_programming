@@ -1,9 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * print_binary - print_binary
+ * get_bit - get_bit
  * @n : the nbr
- * @index : the index 
+ * @index : the index
+ * Return: the bit
  **/
 int get_bit(unsigned long int n, unsigned int index)
 {
