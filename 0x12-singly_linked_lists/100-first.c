@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
-  * b - prints from init by the loader before main
-  */
-void b(void) __attribute__ ((constructor));
-void b(void)
+ * print_before_main - function that prints str before the main
+ */
+void __attribute__((constructor)) print_before_main(void)
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+printf("You're beat! and yet, you must allow,\n");
+printf("I bore my house upon my back!\n");
 }
