@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-*read_textfile - read a text file and print it the stander output
+*create_file - create_file
 *@filename: the file to treat
-*@letters: the nbr of characters in the filename
+*@text_content: the content to print
 *Return: the actuale size of letters printed
 **/
 int create_file(const char *filename, char *text_content)
