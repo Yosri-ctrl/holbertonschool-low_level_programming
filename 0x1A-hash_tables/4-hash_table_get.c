@@ -1,9 +1,8 @@
 #include "hash_tables.h"
 /**
-*hash_table_set -  adds an element to the hash table
+*hash_table_get -  retrieves a value associated with a key
 *@ht: the hash table
 *@key: the key looking for
-*@value: value to add
 *Return: Return 1 if succees
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
