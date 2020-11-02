@@ -41,5 +41,6 @@ int result(int array[], int start, int end, int value)
 			start = m + 1;
 		else
 			end = m - 1;
+	}
 	return (-1);
 }
